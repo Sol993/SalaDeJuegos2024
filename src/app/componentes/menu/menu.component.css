@@ -1,0 +1,25 @@
+mat-toolbar {
+    height: 64px;
+    padding: 0 16px;
+    justify-content: space-between;
+  }
+  .espaciador{
+    flex : 1  1 auto;
+ }
+ .miToolbar{
+    background-color: #6c53e7;
+    color: #ffffff;   
+ }
+ .miButton{
+    background-color: #6c53e7; 
+    color: #ffffff!important; 
+    border:none; 
+    padding: 30px 25px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer;
+    
+ }
+ .miButton:hover {
+    background-color: #4937a1; 
+  }
