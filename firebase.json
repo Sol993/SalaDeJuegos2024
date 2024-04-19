@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/sala-de-juegos2024",
+    "public": "dist/sala-de-juegos2024/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
