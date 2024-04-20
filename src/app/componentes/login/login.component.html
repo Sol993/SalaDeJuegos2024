@@ -1,0 +1,18 @@
+<body>
+    <header>
+        <h1>Ingresa a tu cuenta</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Email:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Ingresa tu email" [(ngModel)]="this.email" autofocus>
+                <label>Contraseña:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Ingresa tu contraseña"[(ngModel)]="this.password">
+                <button class="submit_class" type="submit" form="login_form" (click)="logearte()">Ingresar</button>
+                <button class="btn_usuarioregistrado" type="submit" (click)="usuarioRegistrado()">Usuario registrado</button>
+              <!---  -->
+            </div>
+        </form>
+    </main>
+</body>

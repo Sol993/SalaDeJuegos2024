@@ -4,7 +4,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
 
-
 @Component({
   selector: 'app-about',
   standalone: true,
@@ -17,5 +16,9 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  githubSol(){
+    location.href="https://github.com/Sol993";
+    return false;
+  }
 
 }

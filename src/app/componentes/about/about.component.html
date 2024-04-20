@@ -6,19 +6,23 @@
       <mat-card-content>
         <div class="content-container">
           <div class="image-container">
-            <img  mat-card-image src="assets\Imagen\imgSobreMi.jpeg" class="rounded-image">
+            <img  mat-card-image src="assets\Imagenes\imgSobreMi.jpeg" class="rounded-image">
           </div>
           <div class="text-container">
             <mat-card-title>Solange Correa</mat-card-title>
-            <p>Soy estudiante de la UTN de Avellaneda. <br>Mi juego es "..." <br>Tengo 29 años, me gusta leer y programar.</p>
+            <p class="p-style">Soy estudiante de la UTN de Avellaneda. </p>
+            <p>Mi juego es "..." </p>
+            <p>Tengo 31 años, me gusta leer y programar.</p>
           </div>
         </div>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-fab extended>
-            <mat-icon>home</mat-icon>
-            Home
-          </button>
+        <a mat-button mat-raised-button  color="primary" href="https://github.com/Sol993" class="button-link">
+          <span class="button-content">
+          <img src="assets\Iconos\github-mark.png" class="image"> 
+          <span  class="text"> Mi GitHub</span>
+          </span>
+        </a>
       </mat-card-actions>
     </mat-card>
   </div>
