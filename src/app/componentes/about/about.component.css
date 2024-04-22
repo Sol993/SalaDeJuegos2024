@@ -1,8 +1,23 @@
+header {
+  background-color: rgb(17, 46, 87);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+h1 {
+  letter-spacing: 1.5vw;
+  font-family: 'system-ui';
+  text-transform: uppercase;
+  text-align: center;
+}
 .container {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    height: 100vh;
+    height: 78vh;
     width: 100%;
     background-image: url("/assets/Imagenes/fondo.jpg");
 }
@@ -42,7 +57,7 @@ mat-card-header{
 
 .text-container {
   flex: 1; 
-  color: #6d2cdd;
+  color: #40158c;
   text-align: center;
 }
 
@@ -62,6 +77,7 @@ p-style{
   display: flex;
   align-items: center;
   text-decoration: none; 
+  background-color: #6369bb;
 }
 
 .button-content {
@@ -76,6 +92,6 @@ p-style{
 }
 
 .text {
-  font-size: 14px; /* Tamaño del texto */
+  font-size: 14px; 
 
 }
