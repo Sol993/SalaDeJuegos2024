@@ -1,0 +1,98 @@
+mat-card-header {
+  background-color: rgb(17, 46, 87);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+mat-card-title {
+  letter-spacing: 1.5vw;
+  font-family: 'system-ui';
+  text-transform: uppercase;
+  text-align: center;
+}
+mat-card-content{
+  background-image: url("/assets/Imagenes/login-fondo.png");
+  height: 73vh;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.letras {
+  width: 50%;
+  color: white;
+}
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    background-color: #8d7cb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #190246;
+  }
+  button:disabled {
+    background-color: #4c504c;
+  }
+
+  .contenedor img {
+    margin: 20px 0px;
+    max-width: 350px;
+    height: auto;
+  }
+
+  img{
+    margin-top: 20px;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  #palabra-oculta {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+.palabra-oculta span:not(:last-child) {
+  margin-right: 10px!important; 
+}
+.btn-div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-div{
+  width: 45%;
+}
+
+.contenedor {
+  display: flex; /* Utilizamos flexbox para centrar vertical y horizontalmente */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+}
+.contenedor p{
+  color: white;
+  font-size: 20px;
+}

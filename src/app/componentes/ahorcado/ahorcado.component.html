@@ -1,0 +1,44 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Juego del Ahorcado</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+            <ng-container *ngIf="!juegoTerminado">
+                <div class="container">
+                    <div class="letras">
+                        <p>Intentos restantes: {{ intentosRestantes }} / 6</p>
+                        <div id="palabra-oculta" class="palabra-oculta">
+                            <span *ngFor="let letra of palabraOculta">{{ letra }}</span>
+                        </div>
+                        <div class="btn-div">
+                            <button mat-raised-button color="primary" *ngFor="let letra of letrasDisponibles"
+                                (click)="seleccionarLetra(letra.letra)" [disabled]="!letra.activo">{{ letra.letra
+                                }}</button>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img alt="Imagen del ahorcado" src="\assets\Imagenes\juegos\ahorcado\{{ intentosRestantes }}.jpeg">
+                    </div>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="juegoTerminado">
+                <div class="contenedor">
+                    <div *ngIf="intentosRestantes === 6">
+                        <img alt="game-over" src="\assets\Imagenes\juegos\ahorcado\game-over.gif" />
+                        <p>¡Juego Terminado! Perdiste.</p>
+                        <p>La palabra es {{this.palabraSecreta}}</p>
+                    </div>
+                    <div *ngIf="!palabraOculta.includes('_')">
+                        <img alt="winner" src="\assets\Imagenes\juegos\ahorcado\winner.gif" />
+                        <p>¡Juego Terminado! Ganaste.</p>
+                    </div>
+                    
+                </div>
+                <div class="contenedor">
+                    <button mat-raised-button color="primary" (click)="nuevaPartida()">Jugar de nuevo</button>
+                </div>
+            </ng-container>
+        </div>
+    </mat-card-content>
+</mat-card>

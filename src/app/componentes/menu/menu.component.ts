@@ -23,7 +23,7 @@ import {MatMenuModule} from '@angular/material/menu';
 export class MenuComponent {
   menuItemClicked(option: string): void {
     console.log(option + ' clicked');
-    // Aquí puedes agregar la lógica para manejar la opción del menú seleccionada
+ 
   }
  
 }
