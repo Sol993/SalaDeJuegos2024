@@ -18,8 +18,7 @@ import { MenuComponent } from './componentes/menu/menu.component';
         MatSlideToggleModule,
         LoginComponent,
         HomeComponent,
-        MenuComponent
-        
+        MenuComponent,
     ]
 })
 export class AppComponent {

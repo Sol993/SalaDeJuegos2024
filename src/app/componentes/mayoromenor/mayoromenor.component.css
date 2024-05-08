@@ -1,0 +1,59 @@
+mat-card-header {
+    background-color: rgb(17, 46, 87);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  }
+  mat-card-title {
+    letter-spacing: 1.5vw;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .contenier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    background-image: url('/assets/Imagenes/login-fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white;
+}
+.game-container {
+    background-color: #64578cd0; 
+    padding: 40px; 
+ }
+.card-info {
+    font-size: 18px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .button {
+    background-color: #0c498a; 
+    color: white; 
+    margin: 0 10px;
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  .button:hover {
+    background-color: #1e058e; 
+  }
+
+  .score {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  p {
+    padding: 10px;
+  }

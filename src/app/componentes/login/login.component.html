@@ -9,9 +9,9 @@
                 <input class="field_class" name="login_txt" type="text" placeholder="Ingresa tu email" [(ngModel)]="this.email" autofocus>
                 <label>Contraseña:</label>
                 <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Ingresa tu contraseña"[(ngModel)]="this.password">
-                <button class="submit_class" type="submit" form="login_form" (click)="logearte()">Ingresar</button>
+                <button class="submit_class" type="submit" form="login_form" (click)="login()">Ingresar</button>
+                <button class="btn_usuarioregistrado" (click)="registro()">Registrate aquí</button>
                 <button class="btn_usuarioregistrado" type="submit" (click)="usuarioRegistrado()">Usuario registrado</button>
-              <!---  -->
             </div>
         </form>
     </main>

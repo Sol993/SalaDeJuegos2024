@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title> Registro</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="container">
+            <form [formGroup]="miFormulario" (ngSubmit)="onSubmit()" class="form">
+                    <label>Nombre:</label>
+                    <input class="inputclass" placeholder="Nombre" type="text" formControlName="nombre" required/>
+                    <div *ngIf="miFormulario.get('nombre')?.invalid  && miFormulario.get('nombre')?.touched">
+                        <div *ngIf="miFormulario.get('nombre')?.errors" class="error">El nombre es requerido</div>
+                    </div>
+                    <label>Email: </label>
+                    <input class="inputclass" placeholder="Ingrese email" type="text" formControlName="email" required/>
+                    <div *ngIf="miFormulario.get('email')?.invalid  && miFormulario.get('email')?.touched">
+                        <div *ngIf="miFormulario.get('email')?.errors" class="error">El email es requerido. El email no es válido.</div>
+                    </div>
+                    <label>Contraseña:</label>
+                    <input class="inputclass" type="password" placeholder="Ingresa tu contraseña"
+                        formControlName="password" required>
+                        <div *ngIf="miFormulario.get('password')?.invalid  && miFormulario.get('password')?.touched">
+                        <div *ngIf="miFormulario.get('password')?.errors?.['minlength']" class="error">
+                            Tiene que tener mas 8 digitos
+                        </div>
+                        </div>
+                    <label>Confirme contraseña:</label>
+                    <input matInput class="inputclass" type="password" placeholder="Ingresa nuevamente tu contraseña"
+                         formControlName="confirmarPassword" required>
+                         <!-- <div *ngIf="miFormulario.get('confirmarPassword')" >
+                            <span class="error-message">Las contraseñas no coinciden.</span>
+                        </div> -->
+                        <button type="submit" [disabled]="!miFormulario.valid" class="btnregistro">Registrar</button>
+            </form>
+        </div>
+    </mat-card-content>
+</mat-card>

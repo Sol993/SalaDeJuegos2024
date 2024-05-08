@@ -1,1 +1,25 @@
-<p>mayoromenor works!</p>
+<mat-card-header>
+    <mat-card-title>Juego mayor o menor</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+    <div *ngIf="!gameOver" class="contenier">
+        <div class="game-container">
+            <div class="card-info">
+                <p>Tienes {{this.intentos}} intentos</p>
+                <p>Carta actual: {{ currentCard }}</p>
+                <p>¿La siguiente carta será mayor o menor?</p>
+            </div>
+            <div class="buttons">
+                <button mat-raised-button color="primary" class="button" (click)="checkGuess('mayor')">Mayor</button>
+                <button mat-raised-button color="primary" class="button" (click)="checkGuess('menor')">Menor</button>
+            </div>
+            <p>Puntuación: {{ score }}</p>
+        </div>
+    </div>
+    <div *ngIf="gameOver" class="contenier">
+        <div class="game-container">
+            <p>¡Juego terminado! Tu puntuación final es: {{ score }}</p>
+            <button mat-raised-button color="warn" class="button" (click)="reiniciarjuego()">Reiniciar</button>
+        </div>
+    </div>
+</mat-card-content>

@@ -1,0 +1,79 @@
+mat-card-header {
+    background-color: rgb(17, 46, 87);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+  }
+  mat-card-title {
+    letter-spacing: 1.5vw;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  mat-card-content{
+    background-image: url("/assets/Imagenes/login-fondo.png");
+    height: 120vh;
+  }
+  label{
+    color: rgb(14, 21, 92);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);   
+    margin-top: 20px;     
+  }
+  .full-width {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .inputclass{
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  .btnregistro{
+    border-style: none;
+    border-radius: 5px;
+    background-color: #6b69cf;
+    color: white;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+    cursor: pointer;
+    width: 40%;
+  }
+  .btnregistro:hover{
+    background-color: chocolate;
+  }
+  .btnregistro:disabled{
+    background-color: rgb(110, 106, 116);
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+  }

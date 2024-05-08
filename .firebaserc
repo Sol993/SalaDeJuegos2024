@@ -1,5 +1,14 @@
 {
+  "targets": {
+    "saladejuegoscorreasolange2024": {
+      "hosting": {
+        "saladejuegos2024": [
+          "saladejuegoscorreasolange2024"
+        ]
+      }
+    }
+  },
   "projects": {
-    "default": "saladejuegos-solangecorrea"
+    "default": "saladejuegoscorreasolange2024"
   }
 }
